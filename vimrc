@@ -84,8 +84,14 @@ if count(g:vimified_packages, 'general')
     let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "markdown"]
 
     Bundle 'Spaceghost/vim-matchit'
-    Bundle 'kien/ctrlp.vim'
-    let g:ctrlp_working_path_mode = ''
+    """Bundle 'kien/ctrlp.vim'
+    """let g:ctrlp_working_path_mode = ''
+    Bundle 'Shougo/neocomplcache.vim'
+    let g:neocomplcache_enable_at_startup = 1
+
+    Bundle 'Shougo/unite.vim'
+    nnoremap <C-p> :Unite file_rec/async<cr>
+
 
     Bundle 'vim-scripts/scratch.vim'
 
