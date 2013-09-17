@@ -99,6 +99,7 @@ if count(g:vimified_packages, 'general')
     nmap <leader>be :EasyBufferToggle<enter>
 
     Bundle 'terryma/vim-multiple-cursors'
+    Bundle 'vim-scripts/AnsiEsc.vim'
 endif
 " }}}
 
