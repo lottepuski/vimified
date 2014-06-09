@@ -55,6 +55,7 @@ if count(g:vimified_packages, 'general')
     Bundle 'tpope/vim-speeddating'
     Bundle 'tpope/vim-surround'
     Bundle 'tpope/vim-unimpaired'
+    Bundle 'tpope/vim-abolish'
     Bundle 'scrooloose/nerdtree'
     nmap <C-u> :NERDTreeToggle<CR>
     " Disable the scrollbars (NERDTree)
@@ -124,6 +125,8 @@ if count(g:vimified_packages, 'coding')
     Bundle 'scrooloose/syntastic'
     let g:syntastic_enable_signs=1
     let g:syntastic_auto_loc_list=1
+
+    Bundle 'vim-scripts/AutoComplPop'
 
     " --
 
@@ -316,7 +319,7 @@ set noswapfile
 
 set modelines=0
 set noeol
-set relativenumber
+set number
 set numberwidth=10
 set ruler
 if executable('/bin/zsh')
